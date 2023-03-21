@@ -17,12 +17,13 @@ void jack_bauer(void)
 		{
 			if (h2 == '2' || h1 == '4')
 				break;
-			for (m2 = '0'; m2 < '7'; m2++)
+			for (m2 = '0'; m2 < '6'; m2++)
 			{
 				for (m1 = '0'; m1 <= '9'; m1++)
 				{
 					_putchar(h2);
 					_putchar(h1);
+					_putchar(':');
 					_putchar(m2);
 					_putchar(m1);
 					_putchar('\n');
