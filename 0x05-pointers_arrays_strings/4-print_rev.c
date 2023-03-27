@@ -14,7 +14,7 @@ void print_rev(char *s)
 	{
 		c++;
 	}
-	if (*c != '\0')
+	if (*c != *s)
 	{
 		c--;
 		do {
