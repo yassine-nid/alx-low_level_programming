@@ -18,6 +18,6 @@ char *_strcpy(char *dest,char *src)
 		c++;
 		src++;
 	}
-	return (*dest);
+	return (dest);
 }
 
