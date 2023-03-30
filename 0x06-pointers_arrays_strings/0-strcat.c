@@ -13,16 +13,16 @@ char *_strcat(char *dest, char *src)
 	char *p;
 
 	p = dest;
-	while(*p != '\0')
+	while (*p != '\0')
 	{
 		p++;
 	}
 
-	while(*src != '\0')
+	while (*src != '\0')
 	{
 		*p = *src;
 		p++;
 		src++;
 	}
-	return (p);
+	return (dest);
 }
