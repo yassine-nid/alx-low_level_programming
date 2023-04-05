@@ -7,7 +7,7 @@
 void pointend(char *s)
 {
 	if (*s == '\0')
-		return ();
+		return;
 	s++;
 	pointend(s);
 }
@@ -18,11 +18,11 @@ void pointend(char *s)
  * @s: stop point
  */
 
-void print(char *p, *s)
+void print(char *p,char *s)
 {
 	_putchar(*p);
 	if (*p == *s)
-		return ();
+		return;
 	else
 		print(p - 1, s);
 }
