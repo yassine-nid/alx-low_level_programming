@@ -1,42 +1,18 @@
 #include "main.h"
 
 /**
- * pointend- point to the end of string
- * @s: string to print
+ * _print_rev_recursion - Prints a string in reverse recursively.
+ *
+ * @s: A pointer to the string to be printed.
+ *
+ * Return: Nothing.
  */
-void pointend(char *s)
+void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 		return;
-	s++;
-	pointend(s);
+
+	_print_rev_recursion(s + 1);
+	_putchar(*s);
 }
 
-/**
- * print-prints a string in reverse
- * @p: string to print
- * @s: stop point
- */
-
-void print(char *p,char *s)
-{
-	_putchar(*p);
-	if (*p == *s)
-		return;
-	else
-		print(p - 1, s);
-}
-
-/**
- * _print_rev_recursion-prints a string in reverse
- * @s: string to print
- */
-
-void _print_rev_recursion(char *s)
-{
-	char *p;
-
-	p = s;
-	pointend(p);
-	print(p - 1, s);
-}
