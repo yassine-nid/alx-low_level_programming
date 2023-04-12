@@ -23,10 +23,9 @@ char *create_array(unsigned int size, char c)
 	}
 	else
 	{
-		while ( size > 0)
+		while ( size >= 0)
 		{
-			*p = c;
-			p++;
+			p[size] = c;
 			size--;
 		}
 		return (p);
