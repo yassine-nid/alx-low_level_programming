@@ -21,9 +21,14 @@ char *create_array(unsigned int size, char c)
 	{
 		return (NULL);
 	}
-	else 
+	else
 	{
-		*p = c;
+		while ( size > 0)
+		{
+			*p = c;
+			p++;
+			size--;
+		}
 		return (p);
 	}
 }
