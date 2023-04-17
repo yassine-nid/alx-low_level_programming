@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * struct dog - dog struct
  * @name: the name of the dog
