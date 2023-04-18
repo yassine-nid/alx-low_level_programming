@@ -1,5 +1,5 @@
 #include <string.h>
-#include "main.h"
+#include "dog.h"
 /**
  * new_dog - creates a new dog_t variable with given values
  * @name: name of the dog

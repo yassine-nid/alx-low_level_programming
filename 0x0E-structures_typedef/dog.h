@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 /*struct dog - struct of a dog
  * @name: the dog's name
  * @age: the age of the dog
